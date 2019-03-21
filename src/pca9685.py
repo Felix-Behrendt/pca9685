@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import time
 
 import Adafruit_PCA9685
@@ -33,11 +34,10 @@ class ROSPackage_PCA9685:
     def callback_15(self, data):
         self.pca.set_pwm(15, data.data)
 
-    @staticmethod
-    def run():
+    def run(self):
         rospy.init_node('pca9685')
-        rospy.Subscriber('channel_00', Int32, callback)
-        rospy.Subscriber('channel_15', Int32, callback)
+        rospy.Subscriber('channel_00', Int32, self.callback_00)
+        rospy.Subscriber('channel_15', Int32, self.callback_15)
         rospy.spin()
 
 
