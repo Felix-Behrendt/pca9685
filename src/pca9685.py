@@ -35,7 +35,7 @@ class ROSPackage_PCA9685:
 
     @staticmethod
     def run():
-        rospy.init_node('PCA9685')
+        rospy.init_node('pca9685')
         rospy.Subscriber('channel_00', Int32, callback)
         rospy.Subscriber('channel_15', Int32, callback)
         rospy.spin()
