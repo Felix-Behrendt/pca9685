@@ -1,4 +1,4 @@
-### PCA9685
+### pca9685
 
 ## About
 The node is responsible ofr the receiving signals and precessing them in the PCA9685 board.
