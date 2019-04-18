@@ -13,4 +13,4 @@ roslaunch launch/pca9685.launch
 ```
 
 ## Limitations
-Current node depends on the libary ```Adafruit_PCA9685``` that is available for Raspberry Pi, for example, but it will not run on c86 systems.
+Current node depends on the libary ```Adafruit_PCA9685``` that is available for Raspberry Pi, for example, but it will not run on x86 systems.
